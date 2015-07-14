@@ -5,4 +5,4 @@ This package adds a section in Sitecore's Experience Analytics Audience tab to s
 
 The installable package can be found under: Package Files/DP.Sitecore.Analytics.Technology.zip
 
-![alt text](screenshots/dp_sitecore_analytics_technology.png "Experience Analytics with Technology Section")
+![alt text](Screenshots/DP_Sitecore_Analytics_Technology.png "Experience Analytics with Technology Section")
