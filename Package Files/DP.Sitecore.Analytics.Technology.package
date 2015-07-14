@@ -1,0 +1,133 @@
+<project site="playpen.local" format="Zip Package" targetfilefolder="wwwroot">
+  <Metadata>
+    <metadata>
+      <PackageName>DP.Sitecore.Analytics.Technology</PackageName>
+      <Author>Bart X. Tubalinal</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Post-Install Steps:
+
+1. Deploy the following segments (found under Marketing Control Panel/Experience Analytics/Dimensions/Visits):
+ - By Browser/All Visits by Browser
+- By OS/All Visits by OS
+- By Screen/All Visits by Screen
+- By User Agent/All Visits by User Agent
+
+For each segment, make sure the Workflow State is set to Workflows/Experience Analytics Segment/Initalizing. Then, after all segments are in this state, use the Workbox and use the Deploy command on all these segments. You can find these segments in the Experience Analytics Segment workflow.
+
+2. Run the file 'DP.Sitecore.Analytics.Technology.sql' on your Reporting database. The file is located in the Data folder.
+
+Optional:
+
+If you want to process visits/interactions that occurred prior to installing this package, rebuild your Reporting database per the database rebuild instructions. Make sure to run the 'DP.Sitecore.Analytics.Technology.sql' file on your Reporting.Secondary database.</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/{9BF6AB08-C4D8-4174-A6D1-DD3DB77805A4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser/{5E4B8313-6D42-47E4-A2B6-CCF58CD01DD2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By OS/{C6FB38A6-96EA-4B19-901C-12D8E0366ACE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Screen/{EFD666F6-C0C8-4F40-BF7F-DF7396D075B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By User Agent/{65B97666-6170-40AB-AF73-D407172C0D44}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Browser/All Visits by Browser/{93886CFF-8726-4840-BDD8-3AA8EC586E75}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By OS/All Visits by OS/{BFF74A42-92B2-4352-A1A8-43AFEF370873}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By Screen/All Visits by Screen/{D87669C3-6B44-4D71-A86B-280884CAEE18}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By User Agent/All Visits by User Agent/{6D405114-254F-414D-B81F-EBFF2BCB1A27}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/{4C8D82D9-53E7-4B1B-BA5C-4833A02BAE7E}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/{6492CD0C-516B-4DEF-A552-E19CE929DEE7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/{436A41E9-CEF4-427F-AA27-7D57F4BCB798}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/{81ECDDA3-E445-4E98-B73C-BB87DA05F007}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/{5F1137DD-3EA2-413C-A30E-53615ACF04F1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/ExperienceAnalytics Stylesheet/{437D2978-06A1-44A1-9CBC-5B6366BF49C9}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Browsers by Value/{BFEBA49E-10DA-4181-AF3A-47364D1E8E9F}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Browsers by Visits/{DF2D6F7D-370F-498E-A92B-7DFD33ABC44A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Operating Systems by Value/{5D76B045-0D46-402A-A893-7C60BCC51133}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Operating Systems by Visits/{31986535-712C-42A4-BBAC-D3FCDD6A3D6C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Screens by Value/{1D51DEAA-A39D-4C74-81DB-8EA5FB2FC60C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top Screens by Visits/{5B499349-774E-490B-B3F6-4FF5E561FECE}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top User Agents by Value/{7A6BDCD4-F6D2-43C5-8BD9-6E92CD3998EB}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/PageSettings/Top User Agents by Visits/{F43774F4-C922-4CE0-8803-9BBECA4FFDCF}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/PageSettings/{1C160302-10FE-4E79-BA81-990CC16E53F5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/PageSettings/ExperienceAnalytics Stylesheet/{5ED6CC33-D88C-4129-A2C8-1D08BA7B23E1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/PageSettings/Operating Systems/{7399A1D0-DD95-47EF-B7E3-455375A3EC63}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/PageSettings/Top Operating Systems by Page Views per Visit/{793215A2-E331-47F5-AF97-EE8F39390A84}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Operating Systems/PageSettings/Top Operating Systems by Value per Visit/{DF867E97-D2D7-4056-8E8E-21D40692CFB2}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/PageSettings/{44B9DE97-8614-4BF5-8CD6-4A819A78D7C8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/PageSettings/ExperienceAnalytics Stylesheet/{B27F4A92-6053-4BA3-934A-C34334AA5221}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/PageSettings/Top User Agents by Page Views per Visit/{9E038E55-D84C-41AD-9E43-73A8B9819E0A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/PageSettings/Top User Agents by Value per Visit/{15AC95F7-67A7-4B1B-8F02-10AF7910306D}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/User Agents/PageSettings/User Agents/{88D9B071-83A8-466B-B2F6-A67E5FF1B05A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/PageSettings/{65AE49B7-9475-4736-8E84-74D3DC4C94A2}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/PageSettings/Browsers/{C0D1E248-A71A-4DD3-9FE5-188913F9A0BE}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/PageSettings/ExperienceAnalytics Stylesheet/{635BB060-F447-431C-BEAE-B87BB487BCF4}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/PageSettings/Top Browsers by Page Views per Visit/{52D8A152-E08C-4CD5-8798-21A397B6E7F7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Browsers/PageSettings/Top Browsers by Value per Visit/{1DDAA126-FF8C-475D-AAD9-0BAD7E464973}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/PageSettings/{F475F20D-4D7C-4638-B592-AA35EB0AFD04}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/PageSettings/ExperienceAnalytics Stylesheet/{9F4494A1-4A5D-4675-84A5-C0216399C31A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/PageSettings/Screen Resolutions/{E844FE14-E135-4A58-8B61-0B165ADCD127}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/PageSettings/Top Screens by Page Views per Visit/{B7F46A0D-EEC3-46BB-88F9-4B0AB1EACE4C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Audience/Technology/Screen Resolutions/PageSettings/Top Screens by Value per Visit/{A6325B7B-5594-4AFC-BB1E-B4AC51F7E3F9}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/DP.Sitecore.Analytics.Technology.config</x-item>
+        <x-item>/bin/DP.Sitecore.Analytics.Technology.dll</x-item>
+        <x-item>/Data</x-item>
+        <x-item>/Data/DP.Sitecore.Analytics.Technology.sql</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
