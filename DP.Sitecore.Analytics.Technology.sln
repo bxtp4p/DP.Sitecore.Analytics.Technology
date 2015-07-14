@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package Files", "Package Fi
 		Solution Files\DP.Sitecore.Analytics.Technology.config = Solution Files\DP.Sitecore.Analytics.Technology.config
 		Solution Files\DP.Sitecore.Analytics.Technology.package = Solution Files\DP.Sitecore.Analytics.Technology.package
 		Solution Files\DP.Sitecore.Analytics.Technology.sql = Solution Files\DP.Sitecore.Analytics.Technology.sql
+		Package Files\DP.Sitecore.Analytics.Technology.zip = Package Files\DP.Sitecore.Analytics.Technology.zip
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{E501D4E6-5B16-42E9-9BB7-E493327AC053}"
